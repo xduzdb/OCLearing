@@ -6,6 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		99FDA0B72D5AFC9500B0FD90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99DE70C72D55F3A9006DF1DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99FDA09B2D5AFC9200B0FD90;
+			remoteInfo = OcLearning;
+		};
+		99FDA0C12D5AFC9500B0FD90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99DE70C72D55F3A9006DF1DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99FDA09B2D5AFC9200B0FD90;
+			remoteInfo = OcLearning;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		99DE70CD2D55F3A9006DF1DC /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,7 +37,20 @@
 
 /* Begin PBXFileReference section */
 		99DE70CF2D55F3A9006DF1DC /* testA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testA; sourceTree = BUILT_PRODUCTS_DIR; };
+		99FDA09C2D5AFC9200B0FD90 /* OcLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OcLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99FDA0B62D5AFC9500B0FD90 /* OcLearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OcLearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99FDA0C02D5AFC9500B0FD90 /* OcLearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OcLearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		99FDA0C82D5AFC9600B0FD90 /* Exceptions for "OcLearning" folder in "OcLearning" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 99FDA09B2D5AFC9200B0FD90 /* OcLearning */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		99DE70D12D55F3A9006DF1DC /* testA */ = {
@@ -28,10 +58,49 @@
 			path = testA;
 			sourceTree = "<group>";
 		};
+		99FDA09D2D5AFC9300B0FD90 /* OcLearning */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				99FDA0C82D5AFC9600B0FD90 /* Exceptions for "OcLearning" folder in "OcLearning" target */,
+			);
+			path = OcLearning;
+			sourceTree = "<group>";
+		};
+		99FDA0B92D5AFC9500B0FD90 /* OcLearningTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = OcLearningTests;
+			sourceTree = "<group>";
+		};
+		99FDA0C32D5AFC9600B0FD90 /* OcLearningUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = OcLearningUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		99DE70CC2D55F3A9006DF1DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FDA0992D5AFC9200B0FD90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FDA0B32D5AFC9500B0FD90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FDA0BD2D5AFC9500B0FD90 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				99DE70D12D55F3A9006DF1DC /* testA */,
+				99FDA09D2D5AFC9300B0FD90 /* OcLearning */,
+				99FDA0B92D5AFC9500B0FD90 /* OcLearningTests */,
+				99FDA0C32D5AFC9600B0FD90 /* OcLearningUITests */,
 				99DE70D02D55F3A9006DF1DC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				99DE70CF2D55F3A9006DF1DC /* testA */,
+				99FDA09C2D5AFC9200B0FD90 /* OcLearning.app */,
+				99FDA0B62D5AFC9500B0FD90 /* OcLearningTests.xctest */,
+				99FDA0C02D5AFC9500B0FD90 /* OcLearningUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +157,74 @@
 			productReference = 99DE70CF2D55F3A9006DF1DC /* testA */;
 			productType = "com.apple.product-type.tool";
 		};
+		99FDA09B2D5AFC9200B0FD90 /* OcLearning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99FDA0C92D5AFC9600B0FD90 /* Build configuration list for PBXNativeTarget "OcLearning" */;
+			buildPhases = (
+				99FDA0982D5AFC9200B0FD90 /* Sources */,
+				99FDA0992D5AFC9200B0FD90 /* Frameworks */,
+				99FDA09A2D5AFC9200B0FD90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				99FDA09D2D5AFC9300B0FD90 /* OcLearning */,
+			);
+			name = OcLearning;
+			packageProductDependencies = (
+			);
+			productName = OcLearning;
+			productReference = 99FDA09C2D5AFC9200B0FD90 /* OcLearning.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99FDA0B52D5AFC9500B0FD90 /* OcLearningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99FDA0CC2D5AFC9600B0FD90 /* Build configuration list for PBXNativeTarget "OcLearningTests" */;
+			buildPhases = (
+				99FDA0B22D5AFC9500B0FD90 /* Sources */,
+				99FDA0B32D5AFC9500B0FD90 /* Frameworks */,
+				99FDA0B42D5AFC9500B0FD90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99FDA0B82D5AFC9500B0FD90 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				99FDA0B92D5AFC9500B0FD90 /* OcLearningTests */,
+			);
+			name = OcLearningTests;
+			packageProductDependencies = (
+			);
+			productName = OcLearningTests;
+			productReference = 99FDA0B62D5AFC9500B0FD90 /* OcLearningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99FDA0BF2D5AFC9500B0FD90 /* OcLearningUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99FDA0CF2D5AFC9600B0FD90 /* Build configuration list for PBXNativeTarget "OcLearningUITests" */;
+			buildPhases = (
+				99FDA0BC2D5AFC9500B0FD90 /* Sources */,
+				99FDA0BD2D5AFC9500B0FD90 /* Frameworks */,
+				99FDA0BE2D5AFC9500B0FD90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99FDA0C22D5AFC9500B0FD90 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				99FDA0C32D5AFC9600B0FD90 /* OcLearningUITests */,
+			);
+			name = OcLearningUITests;
+			packageProductDependencies = (
+			);
+			productName = OcLearningUITests;
+			productReference = 99FDA0C02D5AFC9500B0FD90 /* OcLearningUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +236,17 @@
 				TargetAttributes = {
 					99DE70CE2D55F3A9006DF1DC = {
 						CreatedOnToolsVersion = 16.1;
+					};
+					99FDA09B2D5AFC9200B0FD90 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					99FDA0B52D5AFC9500B0FD90 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 99FDA09B2D5AFC9200B0FD90;
+					};
+					99FDA0BF2D5AFC9500B0FD90 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 99FDA09B2D5AFC9200B0FD90;
 					};
 				};
 			};
@@ -111,9 +265,36 @@
 			projectRoot = "";
 			targets = (
 				99DE70CE2D55F3A9006DF1DC /* testA */,
+				99FDA09B2D5AFC9200B0FD90 /* OcLearning */,
+				99FDA0B52D5AFC9500B0FD90 /* OcLearningTests */,
+				99FDA0BF2D5AFC9500B0FD90 /* OcLearningUITests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99FDA09A2D5AFC9200B0FD90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FDA0B42D5AFC9500B0FD90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FDA0BE2D5AFC9500B0FD90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99DE70CB2D55F3A9006DF1DC /* Sources */ = {
@@ -123,7 +304,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99FDA0982D5AFC9200B0FD90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FDA0B22D5AFC9500B0FD90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FDA0BC2D5AFC9500B0FD90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99FDA0B82D5AFC9500B0FD90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99FDA09B2D5AFC9200B0FD90 /* OcLearning */;
+			targetProxy = 99FDA0B72D5AFC9500B0FD90 /* PBXContainerItemProxy */;
+		};
+		99FDA0C22D5AFC9500B0FD90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99FDA09B2D5AFC9200B0FD90 /* OcLearning */;
+			targetProxy = 99FDA0C12D5AFC9500B0FD90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		99DE70D42D55F3A9006DF1DC /* Debug */ = {
@@ -257,6 +472,137 @@
 			};
 			name = Release;
 		};
+		99FDA0CA2D5AFC9600B0FD90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z93V47642B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OcLearning/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.OcLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99FDA0CB2D5AFC9600B0FD90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z93V47642B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OcLearning/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.OcLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99FDA0CD2D5AFC9600B0FD90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.OcLearningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OcLearning.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OcLearning";
+			};
+			name = Debug;
+		};
+		99FDA0CE2D5AFC9600B0FD90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.OcLearningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OcLearning.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OcLearning";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99FDA0D02D5AFC9600B0FD90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.OcLearningUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OcLearning;
+			};
+			name = Debug;
+		};
+		99FDA0D12D5AFC9600B0FD90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.OcLearningUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OcLearning;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -274,6 +620,33 @@
 			buildConfigurations = (
 				99DE70D72D55F3A9006DF1DC /* Debug */,
 				99DE70D82D55F3A9006DF1DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99FDA0C92D5AFC9600B0FD90 /* Build configuration list for PBXNativeTarget "OcLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FDA0CA2D5AFC9600B0FD90 /* Debug */,
+				99FDA0CB2D5AFC9600B0FD90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99FDA0CC2D5AFC9600B0FD90 /* Build configuration list for PBXNativeTarget "OcLearningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FDA0CD2D5AFC9600B0FD90 /* Debug */,
+				99FDA0CE2D5AFC9600B0FD90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99FDA0CF2D5AFC9600B0FD90 /* Build configuration list for PBXNativeTarget "OcLearningUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FDA0D02D5AFC9600B0FD90 /* Debug */,
+				99FDA0D12D5AFC9600B0FD90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
