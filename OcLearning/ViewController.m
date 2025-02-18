@@ -11,6 +11,7 @@
 
 @property (nonatomic, strong) UIButton *button;
 @property (nonatomic, strong) UILabel *label;
+//@property (nonatomic, copy) void(^blockA)(void);
 
 @end
 
@@ -19,9 +20,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // 创建子线程 -- NSThread
+//    NSThread *thread = [[NSThread alloc] init];
+    // 添加事件源
+//    [self.button performSelector:@selector(clickAction) onThread:thread withObject:nil waitUntilDone:NO]; // 开启子线程消息循环
+//    [self.button addTarget:self action:@selector(startRunLoop) forControlEvents:UIControlEventTouchUpInside]; // 点击事件
+    
+    // 添加事件源 --- GCD
+//    [self.button addTarget:self action:@selector(startGCD) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.button addTarget:self action:@selector(downLoadApp) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    // 添加子视图
     [self.view addSubview: self.button];
     [self.button addSubview: self.label];
+//    self.blockA = ^{
+//        NSLog(@"im block!");
+//    };
     
+    // 自动布局设置
     self.button.translatesAutoresizingMaskIntoConstraints = NO;
     self.label.translatesAutoresizingMaskIntoConstraints = NO;
     
@@ -33,16 +51,42 @@
         [self.label.centerXAnchor constraintEqualToAnchor:self.button.centerXAnchor],
         [self.label.centerYAnchor constraintEqualToAnchor:self.button.centerYAnchor],
     ]];
+    
 }
 
 # pragma mark 方法
 - (void)clickAction {
-    for (int i = 0; i < 1000000; i++) {
+    for (int i = 0; i < 1; i++) {
         @autoreleasepool {
-            NSString *str = [NSString stringWithFormat:@"hello--%d", i];
+            NSString *str = [NSString stringWithFormat:@"hello--%d--%@", i, [NSThread currentThread]];
             NSLog(@"%@", str);
+//            self.blockA();
         }
     }
+}
+
+- (void)startRunLoop {
+    NSLog(@"JH-Coming!");
+    [[NSRunLoop currentRunLoop] run];
+    NSLog(@"JH-Ending!");
+}
+
+- (void)startGCD {
+    // 创建子线程 -- GCD
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [self clickAction];
+    });
+}
+
+- (void)downLoadApp {
+    dispatch_queue_t queue = dispatch_queue_create("jh", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(queue, ^{
+        NSLog(@"JH-Begin === %@", [NSThread currentThread]);
+        dispatch_barrier_sync(dispatch_get_global_queue(0, 0), ^{
+            NSLog(@"hello!");
+        });
+        NSLog(@"JH-End === %@", [NSThread currentThread]);
+    });
 }
 
 # pragma mark 初始化组件
@@ -50,7 +94,6 @@
     if (!_button) {
         _button = [[UIButton alloc] init];
         _button.backgroundColor = UIColor.blackColor;
-        [_button addTarget:self action:@selector(clickAction) forControlEvents:UIControlEventTouchUpInside];
     }
     return _button;
 }
