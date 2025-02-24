@@ -29,7 +29,7 @@
     // 添加事件源 --- GCD
 //    [self.button addTarget:self action:@selector(startGCD) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.button addTarget:self action:@selector(downLoadApp) forControlEvents:UIControlEventTouchUpInside];
+    [self.button addTarget:self action:@selector(singleIns) forControlEvents:UIControlEventTouchUpInside];
     
     
     // 添加子视图
@@ -86,6 +86,17 @@
             NSLog(@"hello!");
         });
         NSLog(@"JH-End === %@", [NSThread currentThread]);
+    });
+}
+
+- (void)singleIns {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        static dispatch_once_t onceToken;
+        NSLog(@"1=====%zd", onceToken);
+        dispatch_once(&onceToken, ^{
+            NSLog(@"2=====%zd", onceToken);
+        });
+        NSLog(@"3=====%zd", onceToken);
     });
 }
 
